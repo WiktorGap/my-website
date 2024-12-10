@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG92NmQ3d2gzNXY3d3lyd25leDg0NGJ1aWI1aTFwcndoOTFuOWN0YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qPuhFBQt8xLEY/giphy.gif') no-repeat center center;
+    background-size: cover; /* Rozciągnięcie tła na całą szerokość */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: background 2s ease-in-out;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.message {
+    font-size: 3rem; /* Powiększenie napisu „Kocham Cię” */
+    color: white;
+    opacity: 0;
+    transition: opacity 2s;
+    margin-top: 20px;
+}
+
+.reveal {
+    opacity: 1;
+}
+
+.new-background {
+    background: url('https://media.giphy.com/media/7vDoUoDZHoUQxMPkd7/giphy.gif') no-repeat center center/cover;
+}
